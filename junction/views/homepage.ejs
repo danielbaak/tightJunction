@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <meta charset="utf-8">
+    <title>Brownian Particles in Two Dimensions</title>
+    <style>
+        body {
+	font-family: verdana, arial;
+        background: #003399;
+        color: #FFFFFF;
+        }
+        canvas {
+	background: #CCCCCC;
+        border: 5px #FFFFFF solid;
+        }
+  </style>
+  </head>
+  <body>
+    <center>
+      <h1>2D Diffusion of Brownian Particles</h1>
+    </center>
+    <table cellpadding="5" cellspacing="5">
+      <tbody>
+        <tr>
+          <td valign="top"> Number of Spheres <br>
+            <input id="N" value="100" min="10" max="300" type="number">
+            <br>
+            Temperature (K) <br>
+            <input id="T" value="300" min="10" max="3000" type="number">
+            <br>
+            Sphere Radius (&#956;m) <br>
+            <input id="radius" value="0.5" min="0.1" max="10"
+              type="number"> <br>
+            Magnification <br>
+            <form name="magnification"> <input name="mag" id="mag"
+                value="100" type="radio">100x<br>
+              <input name="mag" id="mag" value="400" checked="checked"
+                type="radio">400x<br>
+              <input id="play" value="Play" type="button"> <input
+                id="pause" value="Pause" type="button"> <input
+                id="reset" value="Reset" type="button"> <br>
+            </form>
+          </td>
+          <td> <canvas id="box" width="500" height="500"></canvas> </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
